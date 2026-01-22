@@ -1,0 +1,19 @@
+! ==========================
+! EIGRP Configuration
+! Autonomous System 100
+! ==========================
+
+router eigrp 100
+ no auto-summary
+
+ network 192.168.10.0 0.0.0.255
+ network 192.168.20.0 0.0.0.255
+ network 192.168.30.0 0.0.0.255
+ network 192.168.40.0 0.0.0.255
+ network 192.168.50.0 0.0.0.255
+ network 192.168.60.0 0.0.0.255
+
+ network 197.5.50.0 0.0.0.3
+ network 197.5.50.4 0.0.0.3
+ network 197.5.50.8 0.0.0.3
+ network 197.5.50.12 0.0.0.3
