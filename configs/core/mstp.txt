@@ -1,0 +1,17 @@
+! ==========================
+! MSTP Configuration
+! Core Switch (CSWL3-01)
+! ==========================
+
+spanning-tree mode mst
+
+spanning-tree mst configuration
+ name salsabil-mst
+ revision 1
+ instance 1 vlan 10,20,30
+ instance 2 vlan 40,50,60
+ exit
+
+! Root configuration
+spanning-tree mst 1 root primary
+spanning-tree mst 2 root secondary
